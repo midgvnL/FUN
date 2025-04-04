@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+   
+    <title>Funções</title>
+    <script>
+        function somarNumeros(a, b) {
+            console.log(a + b);
+        }
+        somarNumeros(5, 4);
+
+        function saudacao(nome) {
+            return nome;
+        }
+
+        let nome = saudacao("Igor Guilherme")
+        console.log(saudacao("Oi, seja ben vinde " + nome));
+
+        const dividir = (a,b,c) => a + b + c /3;
+        console.log (dividir(8,9,7))
+
+        function maiornumber (a,b) {
+         if(a > b)
+            return a > b
+         else (a < b)
+            return a < b
+        }
+
+        let resultado = maiornumber (9,3)
+        console.log("o maior numero é" + resultado)
+
+        function alterarTexto() {
+            document.getElementById('ig').innerHTML = 
+                "ta tonta ou ta com febre?";
+        }
+
+        function alterarF() {
+            document.getElementById('ig').style.fontFamily = 
+                "Bungee Tint, sans-serif" 
+        }
+
+        function mudarfundo() {
+            document.body.style.backgroundColor = 
+                "white"; 
+        }
+        
+
+        function alerta() {
+            alert("Você é gay!!!!!");
+        }
+
+        
+
+
+    </script>
+</head>
+
+<body>
+    <h1 id="ig" style="color: rgb(249, 249, 249); font-size: 30px;">Igor Guilherme</h1>
+    
+    <button onclick="alterarTexto()">Alterar Texto</button>
+    <button onclick="alterarF()">Mudar Fonte</button>
+    <button onclick="mudarfundo()">Mudar Cor</button>
+    <button onclick="alerta()">Alerta</button>
+    <button onclick="restauracao()">Restaurar</button>
+
+</body>
+
+<style>
+     
+    body {
+            background-color: rgb(255, 0, 55); 
+            text-align: center; 
+            justify-content: center;
+            
+
+    }
+    
+    button 
+    {
+        background-color: darkred;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: hotpink;
+        padding: 18px;
+        border-radius: 3px;
+        font-size: 19px;
+        border-color: mintcream;
+        border-radius: 9px;
+        
+
+    }
+</style>
+
+</html>
