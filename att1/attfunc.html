@@ -11,9 +11,13 @@
     <title>Funções</title>
     <script>
         function somarNumeros(a, b) {
-            console.log(a + b);
+            console.log("o valor é:", a + b);
         }
         somarNumeros(5, 4);
+
+        
+        const media = (a, b, c) => (a + b + c) / 3;
+        console.log(media( 8, 9, 7));
 
         function saudacao(nome) {
             return nome;
@@ -22,18 +26,19 @@
         let nome = saudacao("Igor Guilherme")
         console.log(saudacao("Oi, seja ben vinde " + nome));
 
-        const dividir = (a,b,c) => a + b + c /3;
-        console.log (dividir(8,9,7))
 
-        function maiornumber (a,b) {
-         if(a > b)
-            return a > b
-         else (a < b)
-            return a < b
+
+        function maiorNumber(a, b) {
+       if (a > b) {
+        return a; 
+        } else {
+        return b; 
         }
+}
 
-        let resultado = maiornumber (9,3)
-        console.log("o maior numero é" + resultado)
+    let resultado = maiorNumber(9, 3);
+    console.log("O maior número é: " + resultado);
+
 
         function alterarTexto() {
             document.getElementById('ig').innerHTML = 
