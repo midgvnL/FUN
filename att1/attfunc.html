@@ -48,11 +48,19 @@
         function mudarfundo() {
             document.body.style.backgroundColor = 
                 "white"; 
+          
+            
         }
         
 
         function alerta() {
             alert("Você é gay!!!!!");
+        }
+
+        function restauracao() {
+            document.getElementById("ig").innerHTML = "Igor Guilherme";
+            document.getElementById("ig").style.fontFamily = "Arial, sans-serif";
+            document.body.style.backgroundColor = "red"; 
         }
 
         
@@ -62,11 +70,11 @@
 </head>
 
 <body>
-    <h1 id="ig" style="color: rgb(249, 249, 249); font-size: 30px;">Igor Guilherme</h1>
+    <h1 id="ig" style="color:#FFB6C1; font-size: 30px; font-family: Arial, sans-serif;">Igor Guilherme</h1>
     
     <button onclick="alterarTexto()">Alterar Texto</button>
-    <button onclick="alterarF()">Mudar Fonte</button>
     <button onclick="mudarfundo()">Mudar Cor</button>
+    <button onclick="alterarF()">Mudar Fonte</button>
     <button onclick="alerta()">Alerta</button>
     <button onclick="restauracao()">Restaurar</button>
 
